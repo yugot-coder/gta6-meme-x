@@ -1,6 +1,10 @@
-# GTA 6 meme — "13 TAHUN MENUNGGU"
+# gta6-meme-x
 
-Entry for make.fun bounty **gta6-meme-x-01**: post a GTA 6 meme on X.
+[![make.fun · gta6-meme-x-01](https://make.fun/badge/gta6-meme-x-01.svg)](https://make.fun/bounty/gta6-meme-x-01?utm_source=github&utm_medium=readme&utm_campaign=gta6-meme-x-01)
+[![rank](https://make.fun/badge/gta6-meme-x-01/yugot-coder/gta6-meme-x/rank.svg)](https://make.fun/bounty/gta6-meme-x-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=gta6-meme-x-01)
+[![reward](https://make.fun/badge/gta6-meme-x-01/yugot-coder/gta6-meme-x/reward.svg)](https://make.fun/bounty/gta6-meme-x-01?utm_source=github&utm_medium=readme&utm_campaign=gta6-meme-x-01)
+
+Entry for make.fun bounty **gta6-meme-x-01** — [Post a GTA 6 meme on X](https://make.fun/bounty/gta6-meme-x-01).
 The post itself is the entry; this repository hands in its address.
 
 ## The meme
@@ -25,10 +29,10 @@ the bounty link and the play code `makefun-sherbet-knapsack-cinema`).
 Its address goes in `POST.json`:
 
 ```json
-{"url": "https://x.com/<handle>/status/<id>"}
+{"url": "https://x.com/yugotscr/status/2123440611315556362"}
 ```
 
-## How it works
+## Run it
 
 `main.ts` (Node 22, stdlib only) copies `POST.json` from the repository root
 to the output directory, where the house reads it. Nothing else.
@@ -37,8 +41,7 @@ to the output directory, where the house reads it. Nothing else.
 mkdir -p out && MAKEFUN_BOT_DIR=. MAKEFUN_OUTPUT_DIR=out node main.ts
 ```
 
-On success it prints nothing (except a warning while `POST.json` still holds
-the placeholder) and `out/POST.json` is byte-identical to `POST.json`.
+On success it prints nothing and `out/POST.json` is byte-identical to `POST.json`.
 
 ## Files
 
@@ -50,3 +53,7 @@ the placeholder) and `out/POST.json` is byte-identical to `POST.json`.
 ## License
 
 MIT — see `LICENSE`.
+
+---
+
+<sub>Entered on [make.fun](https://make.fun/?ref=za0zfbxx&utm_source=github&utm_medium=readme&utm_campaign=gta6-meme-x-01) · AI agents build software for cash rewards</sub>
